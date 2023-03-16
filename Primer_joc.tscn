@@ -1,0 +1,462 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Paret.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Detector.tscn" type="PackedScene" id=3]
+[ext_resource path="res://paret_gran.tscn" type="PackedScene" id=4]
+[ext_resource path="res://paisatgeprincipi1.jpg" type="Texture" id=5]
+[ext_resource path="res://Kenney Mini Square Mono.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://lava.jpg" type="Texture" id=7]
+[ext_resource path="res://montaanyeslavachill.jpg" type="Texture" id=8]
+[ext_resource path="res://FOCFOMS.jpg" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 10
+outline_color = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+font_data = ExtResource( 6 )
+
+[node name="Primer_joc" type="Node2D"]
+rotation = -6.28319
+
+[node name="Personatge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 250, 129.001 )
+
+[node name="Detector" parent="." instance=ExtResource( 3 )]
+position = Vector2( -289.004, 957.999 )
+scale = Vector2( 575.64, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 2.619
+margin_left = 6586.0
+margin_top = 114.029
+margin_right = 7408.0
+margin_bottom = 466.029
+custom_fonts/font = SubResource( 1 )
+text = "HAS D'ANAR CAP AMUNT"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 2.619
+margin_left = 7537.01
+margin_top = -2216.97
+margin_right = 8359.01
+margin_bottom = -1864.97
+custom_fonts/font = SubResource( 1 )
+text = "ara és complicara"
+align = 1
+valign = 1
+
+[node name="paret3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 691.999, 288.004 )
+scale = Vector2( 2.52, 0.44 )
+
+[node name="paret4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 868.999, 182.008 )
+scale = Vector2( 2.52, 0.44 )
+
+[node name="paret5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1084, 81.0094 )
+scale = Vector2( 2.52, 0.44 )
+
+[node name="paret7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1757, 525.015 )
+scale = Vector2( 2.52, 0.44 )
+
+[node name="paret9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2240, 393.02 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2531, 265.004 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2871, 157.017 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret23" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3143, 123.007 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2886, 450.017 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3237, 933.005 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3505, 827.016 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2840, 869.03 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4429, 547.022 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4690, 417.023 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5062, 890.013 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5032, 321.023 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5374, 213.015 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5853, 197.029 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret22" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6237, 860.021 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret24" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6576, 949.021 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret26" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6868, 843.023 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret27" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7125, 717.025 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret28" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7407, 586.026 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret29" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7659, 475.028 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret30" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7946, 364.028 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret36" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10462, 57.0477 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret37" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8065, 204.035 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret38" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8240, 92.0373 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret39" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8035, -6.96347 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret40" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7914, -115.966 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret59" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7764, -247.965 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret41" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7622, -367.96 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret42" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6740, -474.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret43" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6559, -601.971 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret44" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6788, -675.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret45" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6534, -787.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret60" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6786, -898.976 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret61" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6564, -992.965 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret46" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6807, -1078.98 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret47" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7090, -1126.98 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret48" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7378, -1169.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret49" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7583.01, -1253.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret50" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7347.01, -1368.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret62" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7629.01, -1457.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret63" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7337.01, -1571.96 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret51" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7657.01, -1655.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret52" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7389.01, -1821.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret53" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9796.01, -2039.94 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret64" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7322.01, -1856.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret66" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7265.01, -1920.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret67" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7265.01, -1920.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret68" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7222.01, -1981.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret69" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7169.01, -2052.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret65" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9601.01, -1935.96 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret54" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7449.02, -2192.95 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret55" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7631.01, -2256.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret56" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7891.01, -2290.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret57" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8157.01, -2318.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret58" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8399.01, -2389.97 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret31" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10782, 274.049 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret32" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11046, 371.043 )
+scale = Vector2( 2.52, -0.519998 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="paret33" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11318, 254.043 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret34" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11750, 233.041 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret35" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12145, 334.044 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="paret70" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12523, 255.057 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret71" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12655, 317.052 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret72" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13017, 311.046 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret73" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13545, -27.9578 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret75" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13879, -123.95 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret76" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14104, -226.945 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret77" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13890, -326.931 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret78" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14111, -419.945 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret79" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13922, -518.931 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret80" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14129, -617.944 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret74" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13250, 135.067 )
+scale = Vector2( 1.07996, -0.159998 )
+
+[node name="paret25" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6440, 555.032 )
+scale = Vector2( 2.52, -0.519998 )
+
+[node name="Paret_gran" parent="." instance=ExtResource( 4 )]
+position = Vector2( -83.0013, 283.998 )
+scale = Vector2( 7.8184, 1.98718 )
+
+[node name="Paret_gran2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1789, 403.005 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paret_gran3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3405, 489.015 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paret_gran4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5194, 825.05 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paret_gran5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 8553.01, -1744.96 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paret_gran6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6598, -527.997 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paret_gran7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 9338, -337.917 )
+scale = Vector2( 13.6982, 3.15075 )
+
+[node name="Paisatgeprincipi1" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 844, 110.004 )
+scale = Vector2( 13.8578, 16.8815 )
+texture = ExtResource( 5 )
+
+[node name="Montaanyeslavachill" type="Sprite" parent="."]
+position = Vector2( 11055.5, -3362.88 )
+scale = Vector2( 8.77441, 6.36537 )
+texture = ExtResource( 8 )
+
+[node name="Focfoms" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 4691.58, -1251.03 )
+scale = Vector2( 9.19468, 38.8822 )
+texture = ExtResource( 9 )
+
+[node name="Focfoms2" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 7948.01, -1199.96 )
+scale = Vector2( 9.19468, 38.4184 )
+texture = ExtResource( 9 )
+
+[node name="Lava" type="Sprite" parent="."]
+position = Vector2( -205.006, 1256 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava2" type="Sprite" parent="."]
+position = Vector2( 2086.36, 1246.01 )
+scale = Vector2( 8.78324, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava3" type="Sprite" parent="."]
+position = Vector2( 4387.99, 1261.02 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava4" type="Sprite" parent="."]
+position = Vector2( 6677.99, 1264.03 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava5" type="Sprite" parent="."]
+position = Vector2( 8908.99, 1271.04 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava6" type="Sprite" parent="."]
+position = Vector2( 11129, 1271.05 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava7" type="Sprite" parent="."]
+position = Vector2( 13389, 1274.06 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava9" type="Sprite" parent="."]
+position = Vector2( 17920, 1250.08 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava10" type="Sprite" parent="."]
+position = Vector2( 20160, 1266.09 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava11" type="Sprite" parent="."]
+position = Vector2( 22324, 1274.1 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )
+
+[node name="Lava8" type="Sprite" parent="."]
+position = Vector2( 15666, 1250.07 )
+scale = Vector2( 8.3572, 7.9203 )
+texture = ExtResource( 7 )

@@ -1,0 +1,175 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://platformer-p15-assets/more fonts/Sniglet-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://platformer-p15-assets/more fonts/KiriFont.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_size = 20
+outline_color = Color( 0.0588235, 0.2, 0.321569, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.313726, 0.0352941, 0.0352941, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_size = 3
+outline_color = Color( 0.129412, 0.0666667, 0.435294, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 29
+
+[node name="PANTALLA1" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.482353, 0.054902, 0.054902, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 60.0
+margin_top = 72.0
+margin_right = 951.0
+margin_bottom = 252.0
+custom_fonts/font = SubResource( 1 )
+text = "JOC ADRIANO"
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 128.0
+margin_top = 300.0
+margin_right = 905.0
+margin_bottom = 533.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+margin_left = 288.0
+margin_top = 35.0
+margin_right = 340.0
+margin_bottom = 80.0
+expand = true
+
+[node name="TextureRect4" type="TextureRect" parent="Panel"]
+margin_left = 352.0
+margin_top = 36.0
+margin_right = 404.0
+margin_bottom = 81.0
+expand = true
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+margin_left = 523.0
+margin_top = 136.0
+margin_right = 575.0
+margin_bottom = 181.0
+expand = true
+
+[node name="TextureRect6" type="TextureRect" parent="Panel"]
+margin_left = 453.0
+margin_top = 138.0
+margin_right = 505.0
+margin_bottom = 183.0
+expand = true
+
+[node name="TextureRect3" type="TextureRect" parent="Panel"]
+margin_left = 177.0
+margin_top = 134.0
+margin_right = 229.0
+margin_bottom = 179.0
+expand = true
+
+[node name="TextureRect5" type="TextureRect" parent="Panel"]
+margin_left = 103.0
+margin_top = 132.0
+margin_right = 155.0
+margin_bottom = 177.0
+expand = true
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 428.0
+margin_top = 41.0
+margin_right = 563.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 3 )
+text = "=    SALTAR"
+
+[node name="Label4" type="Label" parent="Panel"]
+margin_left = 371.0
+margin_top = 47.0
+margin_right = 506.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 3 )
+text = "W
+"
+
+[node name="Label5" type="Label" parent="Panel"]
+margin_left = 541.0
+margin_top = 147.0
+margin_right = 676.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 3 )
+text = "D"
+
+[node name="Label6" type="Label" parent="Panel"]
+margin_left = 195.0
+margin_top = 146.0
+margin_right = 330.0
+margin_bottom = 185.0
+custom_fonts/font = SubResource( 3 )
+text = "A"
+
+[node name="Label2" type="Label" parent="Panel"]
+margin_left = 262.0
+margin_top = 144.0
+margin_right = 397.0
+margin_bottom = 199.0
+custom_fonts/font = SubResource( 3 )
+text = "=    ESQUERRA
+"
+
+[node name="Label3" type="Label" parent="Panel"]
+margin_left = 594.0
+margin_top = 148.0
+margin_right = 729.0
+margin_bottom = 187.0
+custom_fonts/font = SubResource( 3 )
+text = "=    DRETA"
+
+[node name="Label7" type="Label" parent="Panel"]
+margin_left = 335.0
+margin_top = -72.0
+margin_right = 527.0
+margin_bottom = -33.0
+custom_fonts/font = SubResource( 3 )
+text = "PREMSA'M PER JUGAR"
+
+[node name="Arrow-Up" type="Sprite" parent="Panel"]
+position = Vector2( 315, 58 )
+scale = Vector2( 0.0387499, 0.03 )
+
+[node name="Arrow-Up3" type="Sprite" parent="Panel"]
+position = Vector2( 480, 160 )
+rotation = 1.57031
+scale = Vector2( 0.0387499, 0.03 )
+
+[node name="Arrow-Up2" type="Sprite" parent="Panel"]
+position = Vector2( 128, 156 )
+rotation = -1.52802
+scale = Vector2( 0.0387499, 0.02875 )
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 391.0
+margin_top = 184.0
+margin_right = 710.0
+margin_bottom = 296.0
+custom_fonts/font = SubResource( 4 )
+text = "PREMSA'M PER COMENÇAR"
+flat = true
+
+[node name="MusicTitleScreen" type="AudioStreamPlayer" parent="."]
+volume_db = -12.0
+autoplay = true
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]

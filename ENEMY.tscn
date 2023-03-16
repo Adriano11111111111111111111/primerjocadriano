@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://enemies/slimeBlue_blue.png" type="Texture" id=1]
+[ext_resource path="res://enemies/slimeBlue_squashed.png" type="Texture" id=2]
+[ext_resource path="res://enemies/slimeBlue.png" type="Texture" id=3]
+[ext_resource path="res://ENEMY.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "crawl",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "squashed",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23, 11 )
+
+[node name="ENEMY\'S" type="KinematicBody2D"]
+collision_layer = 16
+collision_mask = 35
+collision/safe_margin = 0.001
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 1 )
+frames = SubResource( 1 )
+animation = "crawl"
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 7 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 25 )
