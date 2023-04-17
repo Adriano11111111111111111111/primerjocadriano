@@ -1,7 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://platformer-p15-assets/more fonts/Sniglet-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://platformer-p15-assets/more fonts/KiriFont.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://platformer-p15-assets/UI/grey_button04.png" type="Texture" id=3]
+[ext_resource path="res://platformer-p15-assets/UI/arrow-UP.png" type="Texture" id=4]
+[ext_resource path="res://PlayButton.gd" type="Script" id=5]
+[ext_resource path="res://soundsandmusic/music/Swinging Pants.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -50,6 +54,7 @@ margin_left = 288.0
 margin_top = 35.0
 margin_right = 340.0
 margin_bottom = 80.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect4" type="TextureRect" parent="Panel"]
@@ -57,6 +62,7 @@ margin_left = 352.0
 margin_top = 36.0
 margin_right = 404.0
 margin_bottom = 81.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect2" type="TextureRect" parent="Panel"]
@@ -64,6 +70,7 @@ margin_left = 523.0
 margin_top = 136.0
 margin_right = 575.0
 margin_bottom = 181.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect6" type="TextureRect" parent="Panel"]
@@ -71,6 +78,7 @@ margin_left = 453.0
 margin_top = 138.0
 margin_right = 505.0
 margin_bottom = 183.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect3" type="TextureRect" parent="Panel"]
@@ -78,6 +86,7 @@ margin_left = 177.0
 margin_top = 134.0
 margin_right = 229.0
 margin_bottom = 179.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect5" type="TextureRect" parent="Panel"]
@@ -85,6 +94,7 @@ margin_left = 103.0
 margin_top = 132.0
 margin_right = 155.0
 margin_bottom = 177.0
+texture = ExtResource( 3 )
 expand = true
 
 [node name="Label" type="Label" parent="Panel"]
@@ -148,16 +158,19 @@ text = "PREMSA'M PER JUGAR"
 [node name="Arrow-Up" type="Sprite" parent="Panel"]
 position = Vector2( 315, 58 )
 scale = Vector2( 0.0387499, 0.03 )
+texture = ExtResource( 4 )
 
 [node name="Arrow-Up3" type="Sprite" parent="Panel"]
 position = Vector2( 480, 160 )
 rotation = 1.57031
 scale = Vector2( 0.0387499, 0.03 )
+texture = ExtResource( 4 )
 
 [node name="Arrow-Up2" type="Sprite" parent="Panel"]
 position = Vector2( 128, 156 )
 rotation = -1.52802
 scale = Vector2( 0.0387499, 0.02875 )
+texture = ExtResource( 4 )
 
 [node name="PlayButton" type="Button" parent="."]
 margin_left = 391.0
@@ -167,8 +180,10 @@ margin_bottom = 296.0
 custom_fonts/font = SubResource( 4 )
 text = "PREMSA'M PER COMENÇAR"
 flat = true
+script = ExtResource( 5 )
 
 [node name="MusicTitleScreen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 volume_db = -12.0
 autoplay = true
 

@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://PLAYER.tscn" type="PackedScene" id=1]
 [ext_resource path="res://SOLID_tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://TRANSPARENT_tileset.tres" type="TileSet" id=3]
+[ext_resource path="res://background/set2_background.png" type="Texture" id=4]
+[ext_resource path="res://background/set2_tiles.png" type="Texture" id=5]
+[ext_resource path="res://soundsandmusic/music/Retro Beat.ogg" type="AudioStream" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2088, 10 )
@@ -33,6 +36,7 @@ motion_mirroring = Vector2( 1280, 960 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/purple sky"]
 scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
 centered = false
 
 [node name="back block" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -43,6 +47,7 @@ motion_mirroring = Vector2( 2560, 1920 )
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/back block"]
 modulate = Color( 0.572549, 0, 1, 0.27451 )
 scale = Vector2( 4, 4 )
+texture = ExtResource( 5 )
 centered = false
 
 [node name="midle block" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -53,6 +58,7 @@ motion_mirroring = Vector2( 1600, 1200 )
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/midle block"]
 modulate = Color( 0.705882, 0.917647, 0.992157, 1 )
 scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 5 )
 centered = false
 
 [node name="nearby block" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -61,6 +67,7 @@ motion_mirroring = Vector2( 1120, 840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/nearby block"]
 scale = Vector2( 1.75, 1.75 )
+texture = ExtResource( 5 )
 centered = false
 
 [node name="fall zone" type="Area2D" parent="."]
@@ -75,6 +82,7 @@ position = Vector2( -2098, 0 )
 shape = SubResource( 1 )
 
 [node name="MusicLevel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 volume_db = -8.0
 autoplay = true
 
